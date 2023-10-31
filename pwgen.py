@@ -9,7 +9,7 @@ import base64
 import string
 import pyperclip3
 
-#User input of plaintest password
+#User input of plaintext password
 print('Tip: Setting a password atleast 12 characters in length is recommended.')
 strpw = input('Please enter your plaintext password: ')
 
@@ -21,4 +21,5 @@ pyperclip3.copy(encpw)
 #Copied to clipboard
 print('Copied to clipboard.')
 
+#exit program
 input('Press enter to close.')
