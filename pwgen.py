@@ -5,12 +5,13 @@
 # creating stronger passwords via encoding.
 
 #Modules
+import subprocess
 import base64
 import string
 import pyperclip3
 
-#User input of plaintext password
-print('Tip: Setting a password atleast 12 characters in length is recommended.')
+# #User input of plaintext password
+print('Please temporarily disable Wi-Fi or network connections. \nTip: Using a password atleast 12 characters in length is recommended.')
 strpw = input('Please enter your plaintext password: ')
 
 #Encoding plaintext > string > bytes
