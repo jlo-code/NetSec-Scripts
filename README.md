@@ -1,15 +1,10 @@
-# pw_enc
+# PW-Encoding Tool
 
-The purpose of the script is to assist in circumventing authentication attacks by creating stronger passwords via encoding. Your encrypted plain-text password will never be displayed, but copied to your clipboard.
+Password encryption is a critical aspect of securing user credentials in software applications. Storing passwords in plaintext is a significant security risk because if unauthorized access occurs, the passwords can be easily exposed. Instead, passwords should be hashed or encrypted using secure algorithms.
+The purpose of the script is to mitigate brute force & dictionary attacks via encoding.
 
-Libraries
--base64
--string
--pyperclip3
+Dependencies include,
+-Base64
+-String
+-Pyperclip3
 
-Executing the program:
-The program is designed to be used as an executable, using pyInstaller module.
-Once installed, locate the directory of the program and run pyinstaller.
-
-Authors:
-j-lo
