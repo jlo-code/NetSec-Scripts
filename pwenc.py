@@ -16,6 +16,8 @@ def hashed():
     salt = bcrypt.gensalt()     # generating the salt 
     hash = bcrypt.hashpw(bytes, salt)     # Hashing the password 
     pc.copy(hash)
+    print('Copied to clipboard.')
+
 
 def base64en():
     password = maskpass.askpass(mask="") 
@@ -23,6 +25,7 @@ def base64en():
     # Encode the password in Base64
     encoded_password = base64.b64encode(password_bytes)
     pc.copy(encoded_password)
+    print('Copied to clipboard.')
 
 def base32en():
     password = maskpass.askpass(mask="") 
@@ -30,6 +33,8 @@ def base32en():
     # Encode the password in Base64
     encoded_password = base64.b32encode(password_bytes)
     pc.copy(encoded_password)
+    print('Copied to clipboard.')
+
 
 def base16en():
     password = maskpass.askpass(mask="") 
@@ -37,6 +42,8 @@ def base16en():
     # Encode the password in Base64
     encoded_password = base64.b16encode(password_bytes)
     pc.copy(encoded_password)
+    print('Copied to clipboard.')
+
 
 
 
@@ -47,8 +54,8 @@ def menu():
 
     print('1) Select Bcrypt Encryption')
     print('2) Select Base64 Encoding')
-    print('3) Select Base32 Encoding')
-    print('4) Select Base16 Encoding')
+    print('3) Select Base32 Encryption')
+    print('4) Select Base16 Encryption')
     print('5) exit')
 
 def main():
@@ -75,4 +82,3 @@ def main():
 if __name__ == "__main__": 
 	main()
     
-
