@@ -1,7 +1,5 @@
-# Python Password Encoding Tool
+Mac Spoofing Tool
 
-A python script designed to mitigate brute force and dictionary attacks via encoding.
+A MAC spoofer, or MAC address spoofer, is a tool or technique used to alter the Media Access Control (MAC) address of a network interface on a device. MAC spoofing involves changing the MAC address of a network interface to impersonate another device or to generate a random, non-identifying MAC address. This process is also known as MAC address cloning.
 
-Dependencies include:
-bcrypt, hashlib, os, sys, maskpass, pyperclip3
-
+Dependencies inlcude: subprocess, argparse, re
